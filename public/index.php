@@ -70,9 +70,9 @@ $container['logger'] = function($c) {
 $app->group('/api', function(){
     $this->get('/blogs', '\BlogController:blogs');
     $this->get('/blogs/{id}', '\BlogController:blog');
-    $this->post('/blogs', '\BlogController:addBlogs');
-    $this->put('/blogs/{id}', '\BlogController:updateBlog');
-    $this->delete('/blogs/{id}', '\BlogController:deleteBlog');
+    //$this->post('/blogs', '\BlogController:addBlogs');
+    //$this->put('/blogs/{id}', '\BlogController:updateBlog');
+    //$this->delete('/blogs/{id}', '\BlogController:deleteBlog');
 });
 
 $app->run();
