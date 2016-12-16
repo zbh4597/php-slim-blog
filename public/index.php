@@ -30,6 +30,13 @@ $app->add(function (Request $request, Response $response, callable $next) {
     return $next($request, $response);
 });
 
+//添加跨域请求头
+$app->add(function ($request, $response, $next) {
+    $response = $response->withHeader('Access-Control-Allow-Origin', '*')
+                        ->withHeader('Access-Control-Allow-Credentials', 'true');
+    return $next($request, $response);
+});
+
 //添加session
 $app->add(function ($request, $response, $next) {
     $_SESSION['blogs'] = array(
