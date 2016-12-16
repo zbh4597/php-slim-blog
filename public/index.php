@@ -44,19 +44,19 @@ $app->add(function ($request, $response, $next) {
                 'id' => 1,
                 'title' => '第一篇博客',
                 'content' => '<h1>第一篇博客</h1>',
-                'create_date' => '20161206',  
+                'date' => '20161206',  
             ),
             array(
                 'id' => 2,
                 'title' => '第二篇博客',
                 'content' => '<h1>第二篇博客</h1>',
-                'create_date' => '20161207',  
+                'date' => '20161207',  
             ),
             array(
                 'id' => 3,
                 'title' => '第三篇博客',
                 'content' => '<h1>第三篇博客</h1>',
-                'create_date' => '20161208',  
+                'date' => '20161208',  
             ),
         );
     $request = $request->withAttribute('session', $_SESSION);
