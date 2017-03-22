@@ -80,7 +80,7 @@ $app->group('/api', function(){
     //$this->post('/blogs', '\BlogController:addBlogs');
     //$this->put('/blogs/{id}', '\BlogController:updateBlog');
     //$this->delete('/blogs/{id}', '\BlogController:deleteBlog');
-    $this->delete('/token', '\WxTokenController:token');
+    $this->get('/token', '\WxTokenController:token');
 });
 
 $app->run();
