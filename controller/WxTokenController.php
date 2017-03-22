@@ -8,7 +8,7 @@ class WxTokenController{
        $this->logger = $this->ci->logger;
     }
 
-    public function blogs($request, $response, $args) {
+    public function token($request, $response, $args) {
         $timestamp = $request->getAttribute('timestamp');
         $nonce = $request->getAttribute('nonce');
         $token='weixin';
